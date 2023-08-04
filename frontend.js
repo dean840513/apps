@@ -1,4 +1,4 @@
-const ws = new WebSocket("ws://192.168.1.128:8080");
+const ws = new WebSocket("ws://localhost:8080");
 
 ws.onopen = function(){
 	document.getElementById('status').innerText = '已连接';
