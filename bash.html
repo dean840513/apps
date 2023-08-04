@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/xterm.css" />
+	<script src="lib/xterm.js"></script>
+</head>
+<body>
+	<h1>终端</h1>
+	<div id="terminal"></div>
+	<div id="status">!!!!!连接断开!!!!!</div>
+</body>
+<script src="frontend.js"></script>
+<script>
+	term.onKey(function(key){
+		// console.log(key);
+		ws.send(key.key);
+	});
+</script>
+</html>
